@@ -1,18 +1,87 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="grid-container">
+    <div class="slide">
+      <Slide/>
+    </div>
+    <div class="welcome">
+      <Welcome/>
+    </div>
+    <div class="services">
+      <Services/>
+    </div>
+    <div class="social-media">
+      <SocialMedia/>
+    </div>
+    <div class="news">
+      <News/>
+    </div>
+    <div class="location">
+      <Location/>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Slide from '@/components/Slide.vue';
+import Welcome from '@/components/Welcome.vue';
+import Services from '@/components/Services.vue';
+import SocialMedia from '@/components/SocialMedia.vue';
+import News from '@/components/News.vue';
+import Location from '@/components/Location.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    Slide,
+    Welcome,
+    Services,
+    SocialMedia,
+    News,
+    Location,
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  100vh 28vh 50vh 10vh 60vh 40vh;
+}
+
+.slide {
+  background-color: pink;
+  height: 100vh;
+  grid-row: 1/2;
+}
+
+.welcome {
+  background-color: purple;
+  height: 28vh;
+  grid-row: 2/3;
+}
+
+.services {
+  background-color: orange;
+  height: 50vh;
+  grid-row: 3/4;
+}
+
+.social-media {
+  background-color: blue;
+  height: 10vh;
+  grid-row: 4/5;
+}
+
+.news {
+  background-color: green;
+  height: 60vh;
+  grid-row: 5/6;
+}
+
+.location {
+  background-color: gray;
+  height: 40vh;
+  grid-row: 6/7;
+}
+</style>
