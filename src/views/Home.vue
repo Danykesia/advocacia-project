@@ -46,7 +46,7 @@ export default {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:  100vh 28vh 70vh 10vh 60vh 40vh;
+  grid-template-rows:  100vh 28vh 70vh 15vh 60vh 40vh;
 }
 
 .slide {
@@ -69,7 +69,7 @@ export default {
 
 .social-media {
   background-color: #201919;
-  height: 10vh;
+  height: 15vh;
   grid-row: 4/5;
 }
 
