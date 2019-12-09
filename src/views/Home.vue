@@ -50,7 +50,7 @@ export default {
 }
 
 .slide {
-  background-color: pink;
+  background-color: gray;
   height: 100vh;
   grid-row: 1/2;
 }

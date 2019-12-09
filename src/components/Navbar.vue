@@ -26,6 +26,7 @@
   width: 100%;
   // background-color: #3f3f3f;
   position: fixed;
+  z-index: 1000;
 
   &_logo {
     // text-align: left;
@@ -56,6 +57,7 @@
       text-transform: uppercase;
       transition: all 0.3s ease 0s;
       letter-spacing: 0.1rem;
+      font-family: 'Source Sans Pro', sans-serif;
 
       &:hover {
         color: #ddb16e;
