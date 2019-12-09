@@ -1,7 +1,7 @@
 <template>
   <header  container-grid >
     <nav class="container navbar">
-      <img href="/" class="navbar_logo" src="../assets/logo.png" alt="Logo">
+      <img href="/" class="navbar_logo" src="../assets/balance.svg" alt="Logo">
       <ul class="navbar_links">
         <li><router-link to="/" active-class="active" exact>Home</router-link></li>
         <li><router-link to="/lawfirm" active-class="active" exact>Law Firm

@@ -46,7 +46,7 @@ export default {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:  100vh 28vh 50vh 10vh 60vh 40vh;
+  grid-template-rows:  100vh 28vh 70vh 10vh 60vh 40vh;
 }
 
 .slide {
@@ -56,25 +56,25 @@ export default {
 }
 
 .welcome {
-  background-color:#282828;
+  background-color:#201919;
   height: 28vh;
   grid-row: 2/3;
 }
 
 .services {
-  background-color: #3f3f3f;
-  height: 50vh;
+  background-color: #333131;
+  height: 70vh;
   grid-row: 3/4;
 }
 
 .social-media {
-  background-color: #282828;
+  background-color: #201919;
   height: 10vh;
   grid-row: 4/5;
 }
 
 .news {
-  background-color: #3f3f3f;
+  background-color: #333131;
   height: 60vh;
   grid-row: 5/6;
 }
