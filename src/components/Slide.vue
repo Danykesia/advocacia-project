@@ -4,9 +4,9 @@
       <!-- <img src="../assets/building.png"/> -->
 
       <div class="slide_text-box">
-        <h1 class="main_text">Nosso foco é a defesa<br>dos seus interesses</h1>
+        <h1 class="main_text">Lorem ipsum dolor<br>sit amet consectetur.</h1>
         <hr>
-        <a href="#" class="btn btn-text">Saiba mais</a>
+        <a href="#" class="btn btn-text">Learn more</a>
       </div>
     </div>
 
@@ -14,9 +14,9 @@
       <!-- <img src="../assets/man.png"/> -->
 
       <div class="slide_text-box">
-        <h1 class="main_text">Advocacia com ética<br>e transparência</h1>
+        <h1 class="main_text">Lorem ipsum dolor<br>sit amet consectetur.</h1>
         <hr>
-        <a href="#" class="btn btn-text">Saiba mais</a>
+        <a href="#" class="btn btn-text">Learn more</a>
       </div>
     </div>
   </main>

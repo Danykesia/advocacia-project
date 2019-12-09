@@ -56,25 +56,25 @@ export default {
 }
 
 .welcome {
-  background-color: purple;
+  background-color:#282828;
   height: 28vh;
   grid-row: 2/3;
 }
 
 .services {
-  background-color: orange;
+  background-color: #3f3f3f;
   height: 50vh;
   grid-row: 3/4;
 }
 
 .social-media {
-  background-color: blue;
+  background-color: #282828;
   height: 10vh;
   grid-row: 4/5;
 }
 
 .news {
-  background-color: green;
+  background-color: #3f3f3f;
   height: 60vh;
   grid-row: 5/6;
 }
