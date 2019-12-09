@@ -59,6 +59,7 @@ export default {
 .slide1 {
   background-image: url('../assets/building.png');
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
@@ -66,6 +67,7 @@ export default {
 .slide2 {
   background-image: url('../assets/man.png');
   background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }
