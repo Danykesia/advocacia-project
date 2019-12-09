@@ -1,5 +1,5 @@
 <template>
-  <div class="welcome">
+  <div class="welcome container">
     <h1>Welcome to our law firm</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
       Odio deserunt, quaerat repellendus magni commodi et, voluptatem
@@ -11,7 +11,8 @@
 
 <style lang="scss" scoped>
 .welcome {
-  padding: 2rem 2rem 0 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 
   & h1 {
     text-align: center;
