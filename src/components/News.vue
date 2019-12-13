@@ -1,45 +1,47 @@
 <template>
-  <div class="news">
-    <h1>NEWS</h1>
+  <section class="news">
+    <div class="container">
+      <h1>NEWS</h1>
 
-    <div class="news-container">
-      <div class="news-card">
-        <div class="news-picture">
-          <img src="../assets/man.png">
-        </div>
-       <h3><a href="#">Lorem ipsum</a></h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
-          provident vero officia distinctio minus...
-        </p>
-        <router-link to="/blog">Read more</router-link>
-      </div>
-
-      <div class="news-card">
-        <div class="news-picture">
-          <img src="../assets/building.png">
-        </div>
+      <div class="news-container">
+        <div class="news-card">
+          <div class="news-picture">
+            <img src="../assets/man.png">
+          </div>
         <h3><a href="#">Lorem ipsum</a></h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
-          provident vero officia distinctio minus...
-        </p>
-        <router-link to="/blog">Read more</router-link>
-      </div>
-
-      <div class="news-card">
-        <div class="news-picture">
-          <img src="../assets/man.png">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
+            provident vero officia distinctio minus...
+          </p>
+          <router-link to="/blog">Read more</router-link>
         </div>
-        <h3><a href="#">Lorem ipsum</a></h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
-          provident vero officia distinctio minus...
-        </p>
-        <router-link to="/blog">Read more</router-link>
+
+        <div class="news-card">
+          <div class="news-picture">
+            <img src="../assets/building.png">
+          </div>
+          <h3><a href="#">Lorem ipsum</a></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
+            provident vero officia distinctio minus...
+          </p>
+          <router-link to="/blog">Read more</router-link>
+        </div>
+
+        <div class="news-card">
+          <div class="news-picture">
+            <img src="../assets/man.png">
+          </div>
+          <h3><a href="#">Lorem ipsum</a></h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
+            provident vero officia distinctio minus...
+          </p>
+          <router-link to="/blog">Read more</router-link>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -59,6 +61,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 2rem;
   }
 
   &-card {

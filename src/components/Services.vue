@@ -1,57 +1,59 @@
 <template>
   <section class="services">
-    <div class="services-card">
-      <div class="icon-box">
-        <span class="services-icon" ><font-awesome-icon icon="cube"/></span>
+    <div class="container">
+      <div class="services-card">
+        <div class="icon-box">
+          <span class="services-icon" ><font-awesome-icon icon="cube"/></span>
+        </div>
+
+        <h2>Service one</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius mauris eu purus
+          bland it facilisis. Quisque semper elit tortor, eu facilisis dui pellentesque ac.
+          Duis sem mauris, malesuada id tempor non, pretium in leo.
+        </p>
+
+        <router-link to="/services" class="btn-text">
+          Learn more <font-awesome-icon icon="arrow-right"/>
+        </router-link>
       </div>
 
-      <h2>Service one</h2>
+      <div class="services-card">
+        <div class="icon-box">
+          <span class="services-icon" ><font-awesome-icon icon="briefcase"/></span>
+        </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius mauris eu purus bland
-        it facilisis. Quisque semper elit tortor, eu facilisis dui pellentesque ac. Duis sem mauri
-        s, malesuada id tempor non, pretium in leo.
-      </p>
+        <h2>Service two</h2>
 
-      <router-link to="/services" class="btn-text">
-        Learn more <font-awesome-icon icon="arrow-right"/>
-      </router-link>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius mauris eu purus
+          bland it facilisis. Quisque semper elit tortor, eu facilisis dui pellentesque ac.
+          Duis sem mauris, malesuada id tempor non, pretium in leo.
+        </p>
 
-    <div class="services-card">
-      <div class="icon-box">
-        <span class="services-icon" ><font-awesome-icon icon="briefcase"/></span>
+        <router-link to="/services" class="btn-text">
+          Learn more <font-awesome-icon icon="arrow-right"/>
+        </router-link>
       </div>
 
-      <h2>Service two</h2>
+      <div class="services-card">
+        <div class="icon-box">
+          <span class="services-icon" ><font-awesome-icon icon="gavel"/></span>
+        </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius mauris eu purus bland
-        it facilisis. Quisque semper elit tortor, eu facilisis dui pellentesque ac. Duis sem mauri
-        s, malesuada id tempor non, pretium in leo.
-      </p>
+        <h2>Service three</h2>
 
-      <router-link to="/services" class="btn-text">
-        Learn more <font-awesome-icon icon="arrow-right"/>
-      </router-link>
-    </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius mauris eu purus
+          bland it facilisis. Quisque semper elit tortor, eu facilisis dui pellentesque ac.
+          Duis sem mauris, malesuada id tempor non, pretium in leo.
+        </p>
 
-    <div class="services-card">
-      <div class="icon-box">
-        <span class="services-icon" ><font-awesome-icon icon="gavel"/></span>
+        <router-link to="/services" class="btn-text">
+          Learn more <font-awesome-icon icon="arrow-right"/>
+        </router-link>
       </div>
-
-      <h2>Service three</h2>
-
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi varius mauris eu purus bland
-        it facilisis. Quisque semper elit tortor, eu facilisis dui pellentesque ac. Duis sem mauri
-        s, malesuada id tempor non, pretium in leo.
-      </p>
-
-      <router-link to="/services" class="btn-text">
-        Learn more <font-awesome-icon icon="arrow-right"/>
-      </router-link>
     </div>
   </section>
 </template>
@@ -157,6 +159,9 @@
           }
         }
         @media (min-width: 991px) and (max-width: 1199px) {
+          .container {
+            display: flex;
+          }
           .services {
             flex-direction: row;
 
@@ -188,7 +193,11 @@
           }
         }
         @media (min-width: 1200px) {
+          .container {
+            display: flex;
+          }
           .services {
+            display: flex;
             flex-direction: row;
 
             &-icon {

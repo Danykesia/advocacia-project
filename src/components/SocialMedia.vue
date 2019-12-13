@@ -1,8 +1,14 @@
 <template>
   <section class="social-media">
-    <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" class="animation social-icon"/></a>
-    <a href="#"><font-awesome-icon :icon="['fab', 'whatsapp']" class="animation social-icon"/></a>
-    <a href="#"><font-awesome-icon :icon="['fab', 'facebook']" class="animation social-icon"/></a>
+    <a href="#">
+      <font-awesome-icon :icon="['fab', 'instagram']" class="animation social-icon"/>
+    </a>
+    <a href="#">
+      <font-awesome-icon :icon="['fab', 'whatsapp']" class="animation social-icon"/>
+    </a>
+    <a href="#">
+      <font-awesome-icon :icon="['fab', 'facebook']" class="animation social-icon"/>
+    </a>
   </section>
 </template>
 

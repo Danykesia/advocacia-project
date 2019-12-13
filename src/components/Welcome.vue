@@ -1,11 +1,13 @@
 <template>
-  <section class="welcome container">
-    <h1>Welcome to our law firm</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Odio deserunt, quaerat repellendus magni commodi et, voluptatem
-      veniam quia aliquid nesciunt totam harum eius deleniti sapiente
-      labore quod necessitatibus voluptatum unde.
-    </p>
+  <section class="welcome">
+    <div class="container">
+      <h1>Welcome to our law firm</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Odio deserunt, quaerat repellendus magni commodi et, voluptatem
+        veniam quia aliquid nesciunt totam harum eius deleniti sapiente
+        labore quod necessitatibus voluptatum unde.
+      </p>
+    </div>
   </section>
 </template>
 
