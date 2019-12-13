@@ -12,7 +12,7 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
           provident vero officia distinctio minus...
         </p>
-        <a href="#">Read more</a>
+        <router-link to="/blog">Read more</router-link>
       </div>
 
       <div class="news-card">
@@ -24,7 +24,7 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
           provident vero officia distinctio minus...
         </p>
-        <a href="#">Read more</a>
+        <router-link to="/blog">Read more</router-link>
       </div>
 
       <div class="news-card">
@@ -36,7 +36,7 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
           provident vero officia distinctio minus...
         </p>
-        <a href="#">Read more</a>
+        <router-link to="/blog">Read more</router-link>
       </div>
     </div>
   </div>

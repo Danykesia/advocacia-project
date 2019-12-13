@@ -13,7 +13,9 @@
         s, malesuada id tempor non, pretium in leo.
       </p>
 
-      <a href="#" class="btn-text">Learn more <font-awesome-icon icon="arrow-right"/></a>
+      <router-link to="/services" class="btn-text">
+        Learn more <font-awesome-icon icon="arrow-right"/>
+      </router-link>
     </div>
 
     <div class="services-card">
@@ -29,7 +31,9 @@
         s, malesuada id tempor non, pretium in leo.
       </p>
 
-      <a href="#" class="btn-text">Learn more <font-awesome-icon icon="arrow-right"/></a>
+      <router-link to="/services" class="btn-text">
+        Learn more <font-awesome-icon icon="arrow-right"/>
+      </router-link>
     </div>
 
     <div class="services-card">
@@ -45,7 +49,9 @@
         s, malesuada id tempor non, pretium in leo.
       </p>
 
-      <a href="#" class="btn-text">Learn more <font-awesome-icon icon="arrow-right"/></a>
+      <router-link to="/services" class="btn-text">
+        Learn more <font-awesome-icon icon="arrow-right"/>
+      </router-link>
     </div>
   </section>
 </template>
