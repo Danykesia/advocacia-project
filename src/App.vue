@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="h-100">
     <Navbar/>
     <router-view/>
     <Footer/>
@@ -23,8 +23,8 @@ export default {
 <style lang="scss">
 $color-primary: #ddb16e;
 $color-white: #ffffff;
-$gray-light: #3f3f3f;
-$gray-dark: #282828;
+$gray-light: #333131;
+$gray-dark: #201919;
 $gray-extra-light: #595959;
 
 * {
@@ -44,13 +44,23 @@ li, a {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.h1-100 {
+.h-100 {
   height: 100%;
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
+        /*Extra large devices (large desktops, 1200px  e maiores)*/
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1920px;
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
 </style>

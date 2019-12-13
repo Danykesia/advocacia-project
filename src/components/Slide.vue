@@ -56,44 +56,70 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.slide1 {
-  background-image: url('../assets/building.png');
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-.slide2 {
-  background-image: url('../assets/man.png');
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-img {
-  vertical-align: middle;
-  height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-}
-
-hr {
-  width: 250px;
-  border: 1px solid  #ddb16e;
-  margin: 1rem auto;
-}
-
 .slideshow-container {
-  width: 100%;
+  background-color: gray;
   position: relative;
-  margin: auto;
-  height: 100%;
+  width: 100%;
 }
 
 .myslides {
   display: none;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.slide1 {
+  background-image: url('../assets/building-extra-small.png');
+}
+
+.slide2 {
+  background-image: url('../assets/man-extra-small.png');
+}
+
+hr {
+  width: 200px;
+  border: 1px solid  #ddb16e;
+  margin: 1rem auto;
+}
+
+.slide_text-box {
+  width: 100%;
+  text-align: center;
+}
+
+.main_text {
+  color:#ffffff;
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+  border: 1px solid  #ddb16e;
+  background:  #ddb16e;
+  width: 9rem;
+  padding: 0.8rem;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+
+  &:hover {
+    border: 1px solid  #ddb16e;
+    background: none;
+  }
+
+  &-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
 }
 
 .fade {
@@ -121,42 +147,46 @@ hr {
   }
 }
 
-.slide_text-box {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-}
+        @media (min-width: 576px) and (max-width: 767px) {
+          .myslides {
+            background-size: cover;
+          }
+        }
+        @media (min-width: 768px) and (max-width: 1199px) {
+          .myslides {
+            padding-top: 210px;
+            padding-bottom: 210px;
+          }
 
-.main_text {
-  letter-spacing: 0.1rem;
-  color:#ffffff;
-  font-size: 3.5rem;
-  font-weight: 700;
-  font-family: 'Raleway', sans-serif;
-}
+          .slide1 {
+            background-image: url('../assets/building.png');
+          }
 
-.btn {
-  border: 1px solid  #ddb16e;
-  background:  #ddb16e;
-  width: 9rem;
-  padding: 0.8rem;
-  border-radius: 3px;
-  display: block;
-  margin: 0 auto;
+          .slide2 {
+            background-image: url('../assets/man.png');
+          }
 
-  &:hover {
-    border: 1px solid  #ddb16e;
-    background: none;
-  }
+          .main_text {
+            font-size: 3.5rem;
+          }
+        }
+        @media (min-width: 1200px) {
+          .myslides {
+            background-attachment: fixed;
+            padding-top: 260px;
+            padding-bottom: 260px;
+          }
 
-  &-text {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin-top: 4rem;
-  }
-}
+          .slide1 {
+            background-image: url('../assets/building.png');
+          }
+
+          .slide2 {
+            background-image: url('../assets/man.png');
+          }
+
+          .main_text {
+            font-size: 3.5rem;
+          }
+        }
 </style>

@@ -1,16 +1,18 @@
 <template>
-  <div class="social-media">
+  <section class="social-media">
     <a href="#"><font-awesome-icon :icon="['fab', 'instagram']" class="animation social-icon"/></a>
     <a href="#"><font-awesome-icon :icon="['fab', 'whatsapp']" class="animation social-icon"/></a>
     <a href="#"><font-awesome-icon :icon="['fab', 'facebook']" class="animation social-icon"/></a>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
 .social-media {
+  background:  #201919;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 }
 
 .social-icon {

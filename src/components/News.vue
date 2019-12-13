@@ -1,5 +1,5 @@
 <template>
-  <div class="news container">
+  <div class="news">
     <h1>NEWS</h1>
 
     <div class="news-container">
@@ -7,11 +7,10 @@
         <div class="news-picture">
           <img src="../assets/man.png">
         </div>
-       <h3>Lorem ipsum</h3>
+       <h3><a href="#">Lorem ipsum</a></h3>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
-          provident vero officia distinctio minus ullam voluptates deserunt obcaecati culpa
-          assumenda dolore eos dolorem dolores, accusantium.
+          provident vero officia distinctio minus...
         </p>
         <a href="#">Read more</a>
       </div>
@@ -20,11 +19,10 @@
         <div class="news-picture">
           <img src="../assets/building.png">
         </div>
-        <h3>Lorem ipsum</h3>
+        <h3><a href="#">Lorem ipsum</a></h3>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
-          provident vero officia distinctio minus ullam voluptates deserunt obcaecati culpa
-          assumenda dolore eos dolorem dolores, accusantium.
+          provident vero officia distinctio minus...
         </p>
         <a href="#">Read more</a>
       </div>
@@ -33,11 +31,10 @@
         <div class="news-picture">
           <img src="../assets/man.png">
         </div>
-        <h3>Lorem ipsum</h3>
+        <h3><a href="#">Lorem ipsum</a></h3>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto sed, unde
-          provident vero officia distinctio minus ullam voluptates deserunt obcaecati culpa
-          assumenda dolore eos dolorem dolores, accusantium.
+          provident vero officia distinctio minus...
         </p>
         <a href="#">Read more</a>
       </div>
@@ -47,33 +44,41 @@
 
 <style lang="scss" scoped>
 .news {
-  padding-top: 2rem;
+  padding-top: 1rem;
+  background: #333131;
 
   & h1 {
     color: white;
     text-align: center;
-    letter-spacing: .1rem;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   &-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   &-card {
-    width: 350px;
-    height: 480px;
+    width: 300px;
+    height: 380px;
     background: rgb(236, 229, 229);
     border: 1px solid #ffffff;
+    position: relative;
+    margin-bottom: 1rem;
 
-    & h3 {
+    & h3 > a {
       text-transform: uppercase;
-      padding: 1rem 1rem .2rem 1rem;
+      padding: 1rem 0 .2rem 1rem;
+      display: inline-block;
       color: #333131;
       font-size: 1.3rem;
+
+      &:hover {
+        color: gray;
+      }
     }
 
     & p {
@@ -82,7 +87,7 @@
       font-size: 1rem;
     }
 
-    & a {
+    & > a {
       margin-left: 1rem;
       color: #e09e3a;
 
@@ -94,8 +99,47 @@
   }
 
   &-picture img {
-    height: 250px;
+    height: 200px;
     width: 100%;
+    display: block;
   }
 }
+
+        @media (min-width: 736px) and (max-width: 811px) {
+          .news-container {
+            flex-direction: row;
+          }
+          .news-card {
+            width: 230px;
+            height: 400px;
+          }
+        }
+        @media (min-width: 812px) and (max-width: 1023px) {
+          .news-container {
+            flex-direction: row;
+          }
+          .news-card {
+            width: 260px;
+            height: 390px;
+          }
+        }
+        @media (min-width: 1024px) and (max-width: 1199px) {
+          .news-container {
+            flex-direction: row;
+          }
+        }
+        @media (min-width: 1200px) {
+           .news-container {
+            flex-direction: row;
+          }
+          .news-card {
+            width: 350px;
+            height: 410px;
+          }
+          .news-picture img {
+            height: 250px;
+            width: 100%;
+            display: block;
+          }
+        }
 </style>

@@ -1,18 +1,24 @@
 <template>
-  <header  container-grid >
-    <nav class="container navbar">
-      <img href="/" class="navbar_logo" src="../assets/balance.svg" alt="Logo">
-      <ul class="navbar_links">
-        <li><router-link to="/" active-class="active" exact>Home</router-link></li>
-        <li><router-link to="/lawfirm" active-class="active" exact>Law Firm
-          </router-link></li>
-        <li><router-link to="/services" active-class="active" exact>Services
-          </router-link></li>
-        <li><router-link to="/blog" active-class="active" exact>Blog</router-link></li>
-        <li><router-link to="/contact" active-class="active" exact>Contact</router-link></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="container navbar">
+    <img href="/" class="navbar_logo" src="../assets/balance.svg" alt="Logo">
+    <ul class="navbar_links">
+      <li>
+        <router-link to="/" active-class="active" exact>Home</router-link>
+      </li>
+      <li>
+        <router-link to="/lawfirm" active-class="active" exact>Law Firm</router-link>
+      </li>
+      <li>
+        <router-link to="/services" active-class="active" exact>Services</router-link>
+      </li>
+      <li>
+        <router-link to="/blog" active-class="active" exact>Blog</router-link>
+      </li>
+      <li>
+        <router-link to="/contact" active-class="active" exact>Contact</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <style lang="scss" scoped>
@@ -22,17 +28,19 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 14vh;
+  height: 70px;
   width: 100%;
-  // background-color: #3f3f3f;
+  background-color: transparent;
   position: fixed;
   z-index: 1000;
+  left: 0;
+  right: 0;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 
   &_logo {
-    // text-align: left;
-    width: 70px;
+    max-height: 100%;
     cursor: pointer;
-    // color: green;
   }
 
   & ul {
@@ -70,7 +78,9 @@
   }
 }
 
-.scroll-navbar {
-  background-color: #3f3f3f;
-}
+        @media (min-width: 768px) {
+          .navbar {
+            height: 80px;
+          }
+        }
 </style>
