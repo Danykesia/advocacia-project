@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import LawFirm from '../views/LawFirm.vue';
+import Services from '../views/Services.vue';
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/lawfirm',
     name: 'lawfirm',
     component: LawFirm,
+  },
+  {
+    path: '/services',
+    name: 'services',
+    component: Services,
   },
 ];
 

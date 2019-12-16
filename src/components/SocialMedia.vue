@@ -31,6 +31,7 @@
   border-radius: 50%;
   padding: .5rem;
   margin: 0 .4rem;
+  transition: all 0.3s ease 0s;
 }
 
 .animation:hover {

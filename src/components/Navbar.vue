@@ -25,7 +25,7 @@
 
 <style lang="scss" scoped>
 header {
-  background-color: #333131;
+  background-color: #33313148;
   position: fixed;
   width: 100%;
   z-index: 1000;

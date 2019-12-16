@@ -1,6 +1,5 @@
 <template>
   <div class="banner-page">
-    asajsalkjskla
   </div>
 </template>
 
@@ -8,8 +7,14 @@
 .banner-page {
   background-image: url('../assets/building.png');
   background-position: center;
-  height: 40vh;
+  height: 28vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+        @media (min-width: 768px) {
+                  .banner-page {
+                    height: 40vh;
+                  }
+                }
 </style>

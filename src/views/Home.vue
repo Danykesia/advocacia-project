@@ -5,9 +5,7 @@
     <Services/>
     <SocialMedia/>
     <News/>
-    <!-- <div class="location">
-      <Location/>
-    </div> -->
+    <Location/>
   </div>
 </template>
 
@@ -17,7 +15,7 @@ import Welcome from '@/components/Welcome.vue';
 import Services from '@/components/Services.vue';
 import SocialMedia from '@/components/SocialMedia.vue';
 import News from '@/components/News.vue';
-// import Location from '@/components/Location.vue';
+import Location from '@/components/Location.vue';
 
 export default {
   name: 'home',
@@ -27,7 +25,7 @@ export default {
     Services,
     SocialMedia,
     News,
-    // Location,
+    Location,
   },
 };
 </script>

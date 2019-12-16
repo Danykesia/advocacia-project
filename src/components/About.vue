@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <h1 class="title">ABOUT US</h1>
-    <hr>
+    <HeadingTitle title="ABOUT US"/>
     <div class="text">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra tristique
@@ -45,30 +44,34 @@
   </div>
 </template>
 
+<script>
+import HeadingTitle from '@/components/HeadingTitle.vue';
+
+export default {
+  components: {
+    HeadingTitle,
+  },
+};
+</script>
+
 <style lang="scss" scoped>
-.title {
-  color:  #ddb16e;
-  margin: 2rem 0 0 0;
-  font-size: 2.8rem;
-  text-align: center;
-}
-
-hr {
-  border: 1px solid  #ddb16e;
-  width: 200px;
-  margin: 0 auto;
-  padding-top: -2rem;
-  margin-bottom: 2rem;
-}
-
 .text p{
   margin-top: 1rem;
   line-height: 1.7rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #746666;
 
   &:nth-child(4) {
     margin-bottom: 2rem;
   }
 }
+
+        @media (min-width: 768px) {
+                  hr{
+                    width: 210px;
+                  }
+                  .title {
+                    font-size: 2.8rem;
+                  }
+                }
 </style>
