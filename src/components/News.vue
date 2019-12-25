@@ -40,6 +40,9 @@
           <router-link to="/blog">Read more</router-link>
         </div>
       </div>
+      <div>
+          <router-link to="/blog"><button class="btn btn-text">Learn more</button></router-link>
+      </div>
     </div>
   </section>
 </template>
@@ -48,6 +51,7 @@
 .news {
   padding-top: 1rem;
   background: #333131;
+  padding-bottom: 2rem;
 
   & h1 {
     color: white;
@@ -108,6 +112,35 @@
   }
 }
 
+.btn {
+  background: none;
+  border: 1px solid #ddb16e;
+  border-radius: 3px;
+  width: 8rem;
+  padding: 0.8rem;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid  rgb(148, 148, 148);
+    background:  rgb(148, 148, 148);
+    color:white;
+  }
+
+  &:active {
+    border: 1px solid  #ddb16e;
+    background: none;
+    color: #ddb16e;
+  }
+
+  &-text {
+    color: #ddb16e;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
         @media (min-width: 736px) and (max-width: 811px) {
           .news-container {
             flex-direction: row;
@@ -122,7 +155,7 @@
             flex-direction: row;
           }
           .news-card {
-            width: 260px;
+            width: 240px;
             height: 390px;
           }
         }

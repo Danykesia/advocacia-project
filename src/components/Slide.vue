@@ -106,7 +106,7 @@ hr {
 .btn {
   border: 1px solid  #ddb16e;
   background:  #ddb16e;
-  width: 7rem;
+  width: 8rem;
   padding: 0.8rem;
   border-radius: 3px;
   display: block;
@@ -120,7 +120,7 @@ hr {
   &-text {
     color: #ffffff;
     text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1rem;
     margin-top: 4rem;
   }
 }
