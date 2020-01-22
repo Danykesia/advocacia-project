@@ -6,7 +6,7 @@
           <label for="name">Name:</label>
         </div>
         <div class="col-2">
-          <input type="text" id="fname" name="firstname" placeholder="Yor name...">
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
         </div>
       </div>
 
