@@ -115,6 +115,7 @@ hr {
   &:hover {
     border: 1px solid  #ddb16e;
     background: none;
+    color: #ddb16e;
   }
 
   &-text {
