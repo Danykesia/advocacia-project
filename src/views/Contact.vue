@@ -32,10 +32,12 @@ export default {
 
 <style lang="scss" scoped>
         @media (min-width: 768px) {
+          div {
+            background: black;
+          }
           .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            background: black;
           }
 
           .form {
