@@ -87,12 +87,12 @@ header {
       font-family: 'Source Sans Pro', sans-serif;
 
       &:hover {
-        color: #ddb16e;
+        color: #eca944;
       }
     }
 
     & a.active {
-      color: #ddb16e;
+      color: #eca944;
     }
   }
 }
