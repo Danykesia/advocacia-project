@@ -123,8 +123,8 @@
   cursor: pointer;
 
   &:hover {
-    border: 1px solid  rgb(148, 148, 148);
-    background:  rgb(148, 148, 148);
+    border: 1px solid  #ddb16e;
+    background:  #ddb16e;
     color:white;
   }
 
