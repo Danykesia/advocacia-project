@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="container navbar">
+    <nav id="navbar" class="container navbar">
       <img href="/" class="navbar_logo" src="../assets/balance.svg" alt="Logo">
       <ul class="navbar_links">
         <li>
@@ -23,9 +23,22 @@
   </header>
 </template>
 
+<script>
+export default {
+  mounted() {
+    window.onscroll = function scrollFunction() {
+      if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 80) {
+        document.getElementById('navbar').style.background = ' #33313148';
+      } else {
+        document.getElementById('navbar').style.background = 'transparent';
+      }
+    };
+  },
+};
+</script>
+
 <style lang="scss" scoped>
 header {
-  background-color: #33313148;
   position: fixed;
   width: 100%;
   z-index: 1000;
