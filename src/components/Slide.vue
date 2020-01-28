@@ -62,7 +62,7 @@ export default {
   background-color: gray;
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
 }
 
 .myslides {
