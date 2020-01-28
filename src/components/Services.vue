@@ -3,7 +3,7 @@
     <div class="container">
       <div class="services-card">
         <div class="icon-box">
-          <span class="services-icon" ><font-awesome-icon icon="cube"/></span>
+          <span class="services-icon"><font-awesome-icon icon="cube"/></span>
         </div>
 
         <h2>Service one</h2>
