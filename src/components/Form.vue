@@ -93,6 +93,7 @@ button {
   font-weight: bold;
   margin-bottom: 3rem;
 
+
   &:hover {
     background: #be8e45;
   }
@@ -100,7 +101,7 @@ button {
 
 .button {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: 1rem;
 }
 
