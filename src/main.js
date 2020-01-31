@@ -12,6 +12,7 @@ import {
   faCube,
   faAddressCard,
   faCalculator,
+  faBars,
 }
   from '@fortawesome/free-solid-svg-icons';
 import {
@@ -30,7 +31,7 @@ import store from './store';
 
 library.add(faSearch, faChevronRight, faHouseDamage, faInstagram,
   faFacebook, faTwitter, faHome, faWarehouse, faBalanceScale,
-  faArrowRight, faBriefcase, faGavel, faCube, faWhatsapp, faAddressCard, faCalculator);
+  faArrowRight, faBriefcase, faGavel, faCube, faWhatsapp, faAddressCard, faCalculator, faBars);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
