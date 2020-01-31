@@ -62,7 +62,7 @@ export default {
   background-color: gray;
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
 }
 
 .myslides {
@@ -110,7 +110,7 @@ hr {
   padding: 0.8rem;
   border-radius: 3px;
   display: block;
-  margin: 0 auto;
+  margin: 4rem auto;
 
   &:hover {
     border: 1px solid  #ddb16e;
@@ -158,7 +158,7 @@ hr {
         }
         @media (min-width: 768px) and (max-width: 1199px) {
           .slideshow-container {
-            height: 100vh;
+            height: 80vh;
           }
 
           .myslides {

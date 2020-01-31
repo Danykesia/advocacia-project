@@ -14,7 +14,7 @@
 
         @media (min-width: 768px) {
                   .banner-page {
-                    height: 40vh;
+                    height: 20vh;
                   }
                 }
 </style>
