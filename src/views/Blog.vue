@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="blog">
     <BannerPage/>
     <HeadingTitle title="STAY INFORMED"/>
     <div class="grid-container">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact">
     <BannerPage/>
     <HeadingTitle title="CONTACT US"/>
     <div class="grid-container">
@@ -31,21 +31,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-        @media (min-width: 768px) {
-          div {
-            background: black;
-          }
-          .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-          }
+div {
+  background: black;
+}
 
-          .form {
-            grid-column: 1/2;
-          }
+@media (min-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-          .map {
-            grid-column: 2/3;
-          }
-        }
+  .form {
+    grid-column: 1/2;
+  }
+
+  .map {
+    grid-column: 2/3;
+  }
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="services">
     <BannerPage/>
     <ServicesPage/>
     <ServicesList/>
