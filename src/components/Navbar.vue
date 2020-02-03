@@ -36,6 +36,11 @@ export default {
       showMenu: false,
     };
   },
+  watch: {
+    $route() {
+      this.showMenu = false;
+    },
+  },
   mounted() {
     window.onscroll = function scrollFunction() {
       if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 80) {
@@ -72,7 +77,7 @@ header {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  // height: 70px;
   width: 100%;
   padding-top: 2rem;
   // padding-bottom: .5rem;
@@ -87,6 +92,11 @@ header {
     border-radius: 3px;
     padding: .3rem .6rem;
     display: flex;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
   }
 
   &_logo {
@@ -99,6 +109,11 @@ header {
     display: none;
     color: white;
 
+    & li a:focus {
+      border: none;
+      outline: none;
+    }
+
     & li a {
       margin: 0;
     }
@@ -108,7 +123,6 @@ header {
     display: block;
     width: 100%;
     background: #4e4e4e;
-    margin-top: 2rem;
     padding: 0;
   }
 
