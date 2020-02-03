@@ -5,21 +5,21 @@
         <div>
           <h3 class="title-features">MENU</h3>
           <ul class="primary-menu">
-            <a href="#">
+            <router-link to="/">
               <li>Home</li>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/lawfirm">
               <li>Law Firm</li>
-            </a>
-            <a href="#">
-              <li>Serices</li>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/services">
+              <li>Services</li>
+            </router-link>
+            <router-link to="/blog">
               <li>Blog</li>
-            </a>
-            <a href="#">
+            </router-link>
+            <router-link to="/contact">
               <li>Contact</li>
-            </a>
+            </router-link>
           </ul>
         </div>
 
@@ -97,6 +97,11 @@
         color: rgb(209, 209, 209);
         transition: 0.3s ease;
       }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
     }
   }
 
@@ -123,6 +128,11 @@
     &:hover {
       color: #fff;
       transition: 0.3s ease;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
     }
   }
 }
