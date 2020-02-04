@@ -54,7 +54,7 @@
     </div>
 
     <div class="copyright">
-      <p>Copyright 2019 - Law Firm - Todos os direitos reservados</p>
+      <p>Copyright 2020 - Law Firm - Todos os direitos reservados</p>
     </div>
   </footer>
 </template>
