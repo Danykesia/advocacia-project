@@ -1,20 +1,14 @@
 <template>
   <main class="slideshow-container">
     <div class="myslides fade slide1">
-      <!-- <div class="slide-content"> -->
-        <!-- <img src="../assets/building.png"/> -->
-
-        <div class="slide_text-box">
-          <h1 class="main_text">Lorem ipsum dolor<br>sit amet consectetur.</h1>
-          <hr>
-          <router-link to="/lawfirm" class="btn btn-text">Learn more</router-link>
-        </div>
-      <!-- </div> -->
+      <div class="slide_text-box">
+        <h1 class="main_text">Lorem ipsum dolor<br>sit amet consectetur.</h1>
+        <hr>
+        <router-link to="/lawfirm" class="btn btn-text">Learn more</router-link>
+      </div>
     </div>
 
     <div class="myslides fade slide2">
-      <!-- <img src="../assets/man.png"/> -->
-
       <div class="slide_text-box">
         <h1 class="main_text">Lorem ipsum dolor<br>sit amet ipsum.</h1>
         <hr>
@@ -36,22 +30,23 @@ export default {
   },
   methods: {
     showSlides() {
-      let i;
       const slides = document.getElementsByClassName('myslides');
-      // let dots = document.getElementsByClassName('dot');
-      for (i = 0; i < slides.length; i += 1) {
-        slides[i].style.display = 'none';
+
+      if (slides.length > 0) {
+        for (let i = 0; i < slides.length; i += 1) {
+          slides[i].style.display = 'none';
+        }
+
+        this.slideIndex += 1;
+
+        if (this.slideIndex > slides.length) {
+          this.slideIndex = 1;
+        }
+
+        slides[this.slideIndex - 1].style.display = 'flex';
+
+        setTimeout(this.showSlides, 2000); // Change image every 2 seconds
       }
-      this.slideIndex += 1;
-      if (this.slideIndex > slides.length) {
-        this.slideIndex = 1;
-      }
-      // for (i = 0; i < dots.length; i++) {
-      //   dots[i].className = dots[i].className.replace('active', '');
-      // }
-      slides[this.slideIndex - 1].style.display = 'flex';
-      // dots[slideIndex - 1].className += 'active';
-      setTimeout(this.showSlides, 2000); // Change image every 2 seconds
     },
   },
 };
