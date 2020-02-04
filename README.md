@@ -1,4 +1,4 @@
-# projeto-lowfirm
+# advocacia-project
 
 ## Project setup
 ```
