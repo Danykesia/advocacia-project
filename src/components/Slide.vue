@@ -12,7 +12,7 @@
       <div class="slide_text-box">
         <h1 class="main_text">Lorem ipsum dolor<br>sit amet ipsum.</h1>
         <hr>
-        <a href="#" class="btn btn-text">Learn more</a>
+        <router-link to="/lawfirm" class="btn btn-text">Learn more</router-link>
       </div>
     </div>
   </main>
