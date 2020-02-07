@@ -79,7 +79,7 @@ header {
   align-items: center;
   // height: 70px;
   width: 100%;
-  padding-top: 2rem;
+  padding-top: .5rem;
   // padding-bottom: .5rem;
 
   &_btn {
@@ -103,6 +103,7 @@ header {
     margin-left: 2rem;
     max-height: 50px;
     cursor: pointer;
+    padding: .1rem;
   }
 
   & ul {
