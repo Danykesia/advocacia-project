@@ -6,7 +6,7 @@
       <div class="news-container">
         <div class="news-card">
           <div class="news-picture">
-            <img src="../assets/man.png">
+            <img src="../assets/man.jpeg">
           </div>
         <h3><a href="#">Lorem ipsum</a></h3>
           <p>
@@ -18,7 +18,7 @@
 
         <div class="news-card">
           <div class="news-picture">
-            <img src="../assets/building.png">
+            <img src="../assets/building.jpeg">
           </div>
           <h3><a href="#">Lorem ipsum</a></h3>
           <p>
@@ -30,7 +30,7 @@
 
         <div class="news-card">
           <div class="news-picture">
-            <img src="../assets/man.png">
+            <img src="../assets/man.jpeg">
           </div>
           <h3><a href="#">Lorem ipsum</a></h3>
           <p>

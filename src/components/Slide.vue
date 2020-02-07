@@ -72,11 +72,11 @@ export default {
 }
 
 .slide1 {
-  background-image: url('../assets/building-extra-small.png');
+  background-image: url('../assets/building-extra-small.jpeg');
 }
 
 .slide2 {
-  background-image: url('../assets/man-extra-small.png');
+  background-image: url('../assets/man-extra-small.jpeg');
 }
 
 hr {
@@ -161,11 +161,11 @@ hr {
           }
 
           .slide1 {
-            background-image: url('../assets/building.png');
+            background-image: url('../assets/building.jpeg');
           }
 
           .slide2 {
-            background-image: url('../assets/man.png');
+            background-image: url('../assets/man.jpeg');
           }
 
           .main_text {
